@@ -1,0 +1,46 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>320</x><y>110</y><w>370</w><h>150</h></coordinates><panel_attributes>CarrerClass
+--
+- code: String
+- name: String
+- shortName: String
+- year: int
+- isIntegrative: bool
+- isElective: bool
+- timeChargeCatedratic: long
+--
++ Class(String, String, String, int, bool, bool,long,Class[],Class[])
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>40</y><w>210</w><h>110</h></coordinates><panel_attributes>Carrer
+--
+- code: String
+- name: String
+--
++ carrer(String,String)
++ addClass(Class)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>390</y><w>280</w><h>110</h></coordinates><panel_attributes>UserClass
+--
+- wasApproved: date
+- wasRegularized: date
+- notes: String
+- califications: String
+--
++ UserClass(Class,date,date,String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>380</y><w>210</w><h>120</h></coordinates><panel_attributes>UserCarrer
+--
+
+--
++ getUntakenClases() : Clases[]
++ getAllClases() : Clases[]
+
++ RegularizeClass(Class, date)
++ AproveClass(Class, date)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>420</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- userClasses</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>140</y><w>170</w><h>90</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- Classes</panel_attributes><additional_attributes>150;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>120</y><w>130</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- toApprove</panel_attributes><additional_attributes>10;10;50;10;50;60;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>100</y><w>220</w><h>120</h></coordinates><panel_attributes>lt=&lt;-
+m1=*
+- toRegularize</panel_attributes><additional_attributes>10;10;130;10;130;100;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>30</x><y>40</y><w>100</w><h>390</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- officialCarrer</panel_attributes><additional_attributes>50;10;10;10;10;370;60;370</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>230</y><w>160</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+- officialClass</panel_attributes><additional_attributes>50;10;70;10;70;210;10;210</additional_attributes></element></diagram>
