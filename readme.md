@@ -9,8 +9,8 @@
 ## Implementacion:
 - Realizado en angular?
 - Inicialmente sin sistema de login
-- Los datos sobre la carrera estaran en un json
-- Los datos sobre el avance en la carrera en otro json
+- Los datos sobre la carrera estaran en un ¿json?
+- Los datos sobre el avance en la carrera en otro ¿json?
   
 ## Diagrama de Clases Inicial:
 
